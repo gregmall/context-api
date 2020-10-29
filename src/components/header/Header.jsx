@@ -12,14 +12,14 @@ const Header = () => {
     <header className={styles[type]}>
   
       <div>
-          {/* <img src="" /> */}
+          <img src="src/components/header/Webp.net-resizeimage.png" />
       </div>
       <div>
           <a href="/">HOME</a>
       </div>
       <div>
         <label>Toggle for dark or light layout</label>
-        <button onClick={toggle}>{type}</button>
+        <button onClick={toggle} data-testid="button">{type}</button>
         
       </div>
       <div>
