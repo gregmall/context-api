@@ -46,7 +46,6 @@ export const useThemeToggle = () => {
     return toggle;
   }
 
-
 export const useById = id => {
   const [loading, setLoading] = useState(true);
   const [character, setCharacter] = useState([null]);
