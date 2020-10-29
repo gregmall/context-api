@@ -3,14 +3,12 @@ import { useThemeToggle } from '../../hooks/character';
 import { useThemeType } from '../../hooks/character';
 import styles from './Header.css'
 
-
 const Header = () => {
   const toggle = useThemeToggle();
   const type = useThemeType();
   console.log(toggle)
   return (
     <header className={styles[type]}>
-  
       <div>
           <img src="src/components/header/Webp.net-resizeimage.png" />
       </div>
@@ -20,7 +18,6 @@ const Header = () => {
       <div>
         <label>Toggle for dark or light layout</label>
         <button onClick={toggle} data-testid="button">{type}</button>
-        
       </div>
       <div>
           <h1>

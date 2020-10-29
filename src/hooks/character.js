@@ -7,7 +7,6 @@ export const useCharacters = page => {
   const [loading, setLoading] = useState(true);
   const [characters, setCharacters] = useState([]);
 
-
   useEffect(() => {
     getRickAndMortyApi(page)
     .then(returnedCharacters => setCharacters(returnedCharacters))

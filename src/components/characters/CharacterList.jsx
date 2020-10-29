@@ -6,9 +6,7 @@ import { useCharacters, useThemeType } from '../../hooks/character';
 import Character from './Character'
 import styles from './CharacterList.css'
 
-
-
-const CharacterList = ({ page }) => {
+const CharacterList = ({ page }) =>{
 
   const themeType = useThemeType(); 
   const theme = styles[themeType];
@@ -24,11 +22,10 @@ const CharacterList = ({ page }) => {
         </Link>
       </li>
       
-      
-    ));
+   ));
 
   return (
-    
+
     <ul data-testid="characters" className={theme} >
       {characterElements}
     </ul> 
@@ -38,6 +35,5 @@ const CharacterList = ({ page }) => {
 CharacterList.propTypes = {
  page: PropTypes.number
 };
-
 
 export default CharacterList;
