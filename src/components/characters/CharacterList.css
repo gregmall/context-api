@@ -1,0 +1,19 @@
+.dark{
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin: 10px;
+  font-family:fantasy;
+
+}
+.light{
+  background-color: lightblue;
+  color: darkblue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin: 10px;
+  font-family:fantasy;
+}

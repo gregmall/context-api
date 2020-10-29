@@ -1,0 +1,23 @@
+.dark{
+  background-color: black;
+  color: white;
+  background-color:rgb(41, 201, 212);
+  height: 75px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;;
+  flex-direction: row;
+
+}
+.light{
+  background-color: lightblue;
+  color: darkblue;
+  background-color:rgb(41, 201, 212);
+  height: 75px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;;
+  flex-direction: row;
+}
