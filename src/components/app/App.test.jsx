@@ -28,8 +28,14 @@ describe('App component', () => {
 
       fireEvent.click(button);
 
-      return waitFor(() => {
+      await waitFor(() => {
         expect(characterList).toHaveClass('light')
+      });
+
+      fireEvent.click(button);
+
+      return waitFor(() => {
+        expect(characterList).toHaveClass('dark')
       });
    
   });
