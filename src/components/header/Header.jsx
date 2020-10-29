@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className={styles[type]}>
       <div>
-          <img src="src/assets/Webp.net-resizeimage.png" />
+          <img src="public/assets/Webp.net-resizeimage.png" />
       </div>
       <div>
           <a href="/">HOME</a>
