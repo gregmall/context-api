@@ -7,7 +7,7 @@ import styles from './Header.css'
 const Header = () => {
   const toggle = useThemeToggle();
   const type = useThemeType();
-  
+  console.log(toggle)
   return (
     <header className={styles[type]}>
   

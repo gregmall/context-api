@@ -9,3 +9,4 @@ describe('App component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 });
+

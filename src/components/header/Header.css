@@ -1,7 +1,6 @@
 .dark{
-  background-color: black;
-  color: white;
-  background-color:rgb(41, 201, 212);
+  background-color: rgb(17, 26, 51);
+  color:rgb(41, 201, 212);
   height: 75px;
   width: 100%;
   margin-bottom: 10px;
@@ -11,9 +10,8 @@
 
 }
 .light{
-  background-color: lightblue;
-  color: darkblue;
   background-color:rgb(41, 201, 212);
+  color: rgb(17, 26, 51);
   height: 75px;
   width: 100%;
   margin-bottom: 10px;
