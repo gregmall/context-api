@@ -2,6 +2,7 @@ import React from 'react';
 import { render, cleanup, screen, waitFor, fireEvent } from '@testing-library/react';
 import App from './App';
 import { getRickAndMortyApi } from '../../services/getRickAndMortyApi';
+import { ThemeProvider } from '../../context/ThemeContext';
 
 jest.mock('../../services/getRickAndMortyApi.js');
 
@@ -16,7 +17,11 @@ describe('App component', () => {
         'image': 'https://rickandmortyapi.com/api/location/1'
       }
     ]);
-     render(<App />);
+     render(
+        <ThemeProvider>
+            <App />
+        </ThemeProvider>
+      );
 
       const button= screen.getByTestId('button');
       const characterList = await screen.findByTestId('characters');
@@ -24,7 +29,7 @@ describe('App component', () => {
       fireEvent.click(button);
 
       return waitFor(() => {
-        expect(characterList).toHaveClass('style.dark')
+        expect(characterList).toHaveClass('light')
       });
    
   });

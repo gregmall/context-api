@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Component renders List component 1`] = `
+<DocumentFragment>
+  <span>
+    <img
+      src="http://cdn.lowgif.com/full/ff8280aafe27319d-ajax-loading-gif-transparent-background-2-gif-images.gif"
+    />
+  </span>
+   
+</DocumentFragment>
+`;
